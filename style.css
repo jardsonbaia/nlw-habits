@@ -1,0 +1,135 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: white;
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+    background-color: #09090A;
+    padding-inline: clamp(10px, 5vw, 120px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#app {
+    display: grid;
+    place-items: center;
+    gap: 48px;
+
+    width: 100%;
+    max-height: 800px;
+}
+
+header {
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+
+    width: 100%;
+    height: calc(100px + 4vh);
+    max-width: 1200px;
+    padding: 0 30px;
+
+    position: fixed;
+    top: 0px;
+    background-color: #09090A;
+}
+
+button {
+    width: fit-content;
+    height: 52px;
+    gap: 12px;
+    padding: 16px 24px;
+
+    font-family: 'Inter', sans-serif;
+    background: none;
+    border-radius: 8px;
+    border: 1px solid #8B5CF6;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    cursor: pointer;
+}
+
+main {
+    height: 570px;
+    width: 100%;
+    max-width: 1200px;
+    margin-top: calc(100px + 10vh);
+}
+
+form {
+    display: flex;
+}
+
+.habits {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+
+    margin-top: 56px;
+}
+
+.habit {
+    width: 64px;
+    height: 64px;
+
+    font-size: 32px;
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.days {
+    display: flex;
+    margin: 0 32px;
+    gap: 48px;
+}
+
+.day {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+
+.day div {
+    margin-bottom: 8px;
+
+    color: #A1A1A1;
+    font-family: 'Roboto Mono';
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 125%;
+    text-align: center;
+}
+
+input {
+    width: 64px;
+    height: 64px;
+
+    appearance: none;
+    -webkit-appearance: none;
+    border: 2px solid #27272A;
+    border-radius: 8px;
+    background-color: #181818;
+    cursor: pointer;
+}
+
+input:checked {
+    background-color: #8B5CF6;
+    border: 2px solid #A78BFA;
+}
+
+@media screen and (max-width: 480px) {
+    button span {
+        display: none;
+    }
+}
+
