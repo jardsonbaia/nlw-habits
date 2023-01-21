@@ -28,7 +28,7 @@ Esse projeto foi desenvolvido com as seguintes tecnologias:
 
 ## 💻 Projeto
 
-O Habits é um para ajudar a rastrear os hábitos.
+O Habits é um app para ajudar a rastrear os hábitos.
 
 - [Acesse o projeto finalizado, online](https://maykbrito.github.io/devlinks)
 
